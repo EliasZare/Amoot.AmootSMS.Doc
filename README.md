@@ -219,7 +219,7 @@
 - [ مستندات کامل API](https://portal.amootsms.com/documentation)  
 - [ پرتال آموت SMS](https://portal.amootsms.com)
 - [ ارسال تیکت](https://hub.amootsoft.com/dashboard/ticket/create)
-- [ تاریخچه تغییرات](Changelog.md)
+- [ تاریخچه تغییرات](CHANGELOG.md)
 - [ سوالات متداول ](FAQ.md)
 
 ---
