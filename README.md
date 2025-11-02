@@ -225,8 +225,9 @@
 ---
 
 ## 📞 تماس با ما
-- تلفن:<div dir="ltr"> ۰۵۱-۳۱۷۷۷۲۰۰  </div> 
-- ایمیل: info@amootsoft.com
+ تلفن: <div dir="rtl" style="text-align: right;">۰۵۱-۳۱۷۷۷۲۰۰</div>
+ 
+ ایمیل: info@amootsoft.com
 
 ---
 
