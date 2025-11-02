@@ -158,10 +158,4 @@ curl -X POST "https://portal.amootsms.com/rest/GetBankTree" \
 * پاسخ این متد ممکن است حجیم باشد؛ در کلاینت خود از **paging/virtualization** در نمایش درخت استفاده کنید.
 * نودها معمولاً شامل فیلدهایی نظیر <span dir="ltr">Id</span>، <span dir="ltr">Title</span>، <span dir="ltr">Count</span> و <span dir="ltr">Children</span> هستند (ممکن است با پیاده‌سازی شما تفاوت جزئی داشته باشد).
 
-## تغییرات (Changelog)
-
-| تاریخ      | نسخه  | توضیح                        |
-| ---------- | ----- | ---------------------------- |
-| ۱۴۰۲/۰۵/۰۱ | 1.0.0 | ایجاد سند بر پایهٔ قالب واحد |
-
 </div>
