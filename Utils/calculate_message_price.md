@@ -1,11 +1,9 @@
 #  متد محاسبه هزینه پیامک — CalculateMessagePrice
 
 
->**آخرین بروزرسانی:** ۱۴۰۴/۰۷/۲۸
+**آخرین بروزرسانی:** ۱۴۰۴/۰۷/۲۸
 
 **نسخه API:** <span dir="ltr">v1</span>
-
----
 
 ##  آدرس وب‌سرویس
 >https://portal.amootsms.com/rest/CalculateMessagePrice
@@ -36,19 +34,11 @@
 
 ### مثال خروجی موفق:
 ```json
-{
-  "Status": true,
-  "Message": "محاسبه با موفقیت انجام شد",
-  "ReturnValue": 12345
-}
+3339
 ```
 ## مثال خروجی ناموفق:
 ```json
-{
-  "Status": false,
-  "Message": "توکن معتبر نیست",
-  "ReturnValue": 0
-}
+-17
 ```
 
 # نمونه کدها
@@ -77,6 +67,30 @@ using (var client = new System.Net.WebClient())
 }
 
 ```
+
+
+## Python
+
+```python
+import requests
+
+token = "MyToken"
+url = "https://portal.amootsms.com/rest/CalculateMessagePrice"
+
+data = {
+    "SMSMessageText": "پیامک تستی من",
+    "LineNumber": "public",
+    "Mobiles": ["9120000000", "9150000000"]
+}
+
+headers = {"Authorization": token}
+
+response = requests.post(url, json=data, headers=headers)
+print(response.text)
+```
+
+
+
 ## PHP 
 ```PHP
 $token = "MyToken";
@@ -117,4 +131,39 @@ curl -X POST "https://portal.amootsms.com/rest/CalculateMessagePrice" \
   -d "SMSMessageText=پیامک تستی من" \
   -d "LineNumber=public" \
   -d "Mobiles=9120000000,9150000000"
+```
+
+## Java
+
+```java
+import java.io.*;
+import java.net.*;
+import java.nio.charset.StandardCharsets;
+
+public class CalculateMessagePrice {
+    public static void main(String[] args) throws Exception {
+        String token = "MyToken";
+        String urlString = "https://portal.amootsms.com/rest/CalculateMessagePrice";
+        String data = "SMSMessageText=پیامک تستی من&LineNumber=public&Mobiles=9120000000,9150000000";
+
+        URL url = new URL(urlString);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+        conn.setRequestProperty("Authorization", token);
+        conn.setDoOutput(true);
+
+        try (OutputStream os = conn.getOutputStream()) {
+            byte[] input = data.getBytes(StandardCharsets.UTF_8);
+            os.write(input, 0, input.length);
+        }
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8));
+        StringBuilder response = new StringBuilder();
+        String responseLine;
+        while ((responseLine = br.readLine()) != null) {
+            response.append(responseLine.trim());
+        }
+        System.out.println(response.toString());
+    }
+}
 ```

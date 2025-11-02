@@ -7,6 +7,15 @@
 **نسخه API:** <span dir="ltr">v1</span>
 
 
+## فهرست
+
+* [1) دریافت اطلاعات مخاطب — ContactGet](#contactget)
+* [2)  دریافت لیست گروه‌های مخاطبین — ContactGroupList](#contactgrouplist)
+* [3) دریافت لیست مخاطبین گروه — ContactList](#contactlist)
+
+
+> این سند سه متد مرتبط با مدیریت آدرس‌های دریافت دلیوری را پوشش می‌دهد.
+
 ## الگوی خطادهی 
 
 * در حالت خطا پاسخ **HTTP 200 (OK)** است ولی بدنهٔ پاسخ نشان‌دهندهٔ خطاست. همیشه مقدار <span dir="ltr">Status</span> را بررسی کنید.
@@ -15,7 +24,7 @@
 
 ---
 
-# 1) دریافت اطلاعات مخاطب (ContactGet)
+# <a id="contactget"></a> 1) دریافت اطلاعات مخاطب (ContactGet)
 
 **آدرس وب‌سرویس**
 
@@ -186,7 +195,7 @@ curl -X POST "https://portal.amootsms.com/rest/ContactGet" \
 
 ---
 
-# 2) دریافت لیست گروه‌های مخاطبین (ContactGroupList)
+# <a id="contactgrouplist"></a> 2) دریافت لیست گروه‌های مخاطبین (ContactGroupList)
 
 **آدرس وب‌سرویس**
 
@@ -317,7 +326,7 @@ curl -X POST "https://portal.amootsms.com/rest/ContactGroupList" \
 
 ---
 
-# 3) دریافت لیست مخاطبین گروه (ContactList)
+# <a id="contactlist"></a> 3) دریافت لیست مخاطبین گروه (ContactList)
 
 **آدرس وب‌سرویس**
 

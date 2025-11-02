@@ -168,7 +168,7 @@ curl -X POST "https://portal.amootsms.com/rest/GetDeliveriesByCampaignID" \
   -d "CampaignID=76581373"
 ```
 
-## نحوه پاسخ‌دهی وب‌سرویس در حالت خطا (الگوی نوع A)
+## نحوه پاسخ‌دهی وب‌سرویس در حالت خطا
 
 در صورت خطا نیز **HTTP 200 (OK)** بازمی‌گردد و نتیجهٔ عملیات از مقدار <span dir="ltr">Status</span> تشخیص داده می‌شود؛ مانند نمونهٔ «BulkID_Invalid» بالا.
 

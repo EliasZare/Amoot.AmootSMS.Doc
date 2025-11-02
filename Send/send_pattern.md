@@ -2,6 +2,8 @@
 
 **آخرین بروزرسانی:** ۱۴۰۴/۰۷/۲۸
 
+**نسخه API:** <span dir="ltr">v1</span>
+
 ## آدرس وب سرویس
 
 >https://portal.amootsms.com/rest/SendWithPattern

@@ -2,9 +2,10 @@
 
 **آخرین بروزرسانی:** ۱۴۰۴/۰۷/۲۸ 
 
----
+**نسخه API:** <span dir="ltr">v1</span>
 
 ##  آدرس وب‌سرویس  
+
 >https://portal.amootsms.com/rest/SendWithPatternOWN
 
 
@@ -39,7 +40,7 @@
 
 ```json
 {
-  "Status": true,
+  "Status": "Success",
   "MessageID": "9823749237",
   "Mobile": "09120000000",
   "LineNumber": "public",

@@ -6,7 +6,9 @@
 
 **نسخه API:** <span dir="ltr">v1</span>
 
-**آدرس پایه (Base URL):** <span dir="ltr">[https://portal.amootsms.com/rest](https://portal.amootsms.com/rest)</span>
+## آدرس وب‌سرویس
+
+> [https://portal.amootsms.com/rest](https://portal.amootsms.com/rest)
 
 ---
 

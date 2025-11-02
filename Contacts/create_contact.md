@@ -6,8 +6,6 @@
 
 **نسخه API:** <span dir="ltr">v1</span>
 
----
-
 ## آدرس وب‌سرویس
 
 > [https://portal.amootsms.com/rest/ContactCreate](https://portal.amootsms.com/rest/ContactCreate)
