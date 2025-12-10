@@ -1,7 +1,7 @@
 <div dir="rtl">
 
 <div dir="ltr" align="center">
-  <img src="/Images/logo.svg" alt="AmootSMS Logo" width="300"/>
+  <img src="/assets/Images/logo.svg" alt="AmootSMS Logo" width="300"/>
 </div>
 
 ---
